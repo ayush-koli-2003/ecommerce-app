@@ -1,0 +1,16 @@
+<div id="product-display">
+    <ul id="product-area">
+        <ng-container *ngFor="let p of currUser">
+            <li id="product">
+                <div id="display-product" style="margin-top: 80px;">
+                    <div id="product-details">
+                        <h1>Hello!</h1>
+                        <h1>Email:{{p.email}}</h1>
+                        <p>Role:{{p.role}}</p>
+                    </div>
+                </div>
+                
+            </li>
+        </ng-container>
+    </ul>
+</div>

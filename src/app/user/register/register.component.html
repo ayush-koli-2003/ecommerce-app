@@ -1,0 +1,32 @@
+<div style=" margin-left: 400px; margin-right: 400px;">
+    <form [formGroup]="registerForm">
+        <div class="container">
+          <h1>User Registration</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+        
+          
+          <label for="email"><b>Username</b></label>
+          <div id="username-error"></div>
+          <input type="text" placeholder="Enter Username" name="email" formControlName="name">
+
+          
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" formControlName="email">
+          
+          
+          <label for="email"><b>Age</b></label>
+          <input type="text" placeholder="Enter Age" name="email" formControlName="age">
+      
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" formControlName="psw">
+          <hr>
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a routerLink="../login">Sign in</a>.</p>
+        </div>
+      </form>
+</div>

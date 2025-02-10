@@ -1,0 +1,20 @@
+<div id="product-display">
+    <ul id="product-area">
+        <ng-container *ngFor="let p of orderList">
+            <li id="product">
+                <div id="display-product">
+                    <!-- <div id="image">
+                        <img src="{{p.productImage}}" alt="Image">
+                    </div> -->
+                    <div id="product-details">
+                        <h1>{{p.orderName}}</h1>
+                        <p>Price:${{p.orderPrice}}</p>
+                        <p>Status: {{p.orderStatus}}</p>
+                        <!-- <button id="add-to-cart">Add to Cart</button> -->
+                    </div>
+                </div>
+                
+            </li>
+        </ng-container>
+    </ul>
+</div>
